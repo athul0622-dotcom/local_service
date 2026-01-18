@@ -18,12 +18,12 @@ export function FilterBar({
   onLocationChange,
 }: FilterBarProps) {
   return (
-    <div className="flex items-center justify-between mb-6 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm">
-      <div className="text-sm text-gray-600 dark:text-gray-300">
+    <div className="flex flex-col sm:flex-row items-center justify-between mb-6 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm">
+      <div className="text-sm text-gray-600 dark:text-gray-300 mb-4 sm:mb-0">
         <span className="font-semibold text-gray-900 dark:text-white">{totalResults}</span> service providers found
       </div>
 
-      <div className="flex items-center space-x-4">
+      <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
         <div className="flex items-center space-x-2">
           <MapPin className="w-4 h-4 text-gray-500 dark:text-gray-400" />
           <span className="text-sm text-gray-600 dark:text-gray-300">Filter by:</span>

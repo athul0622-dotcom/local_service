@@ -130,7 +130,7 @@ export function EmployeeProfile({ employeeId, onClose }: EmployeeProfileProps) {
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm overflow-hidden mb-6">
-          <div className="relative h-64">
+          <div className="relative h-48 sm:h-64">
             {employee.photo_url ? (
               <img
                 src={employee.photo_url}
@@ -144,11 +144,11 @@ export function EmployeeProfile({ employeeId, onClose }: EmployeeProfileProps) {
             )}
           </div>
 
-          <div className="p-8">
+          <div className="p-4 sm:p-8">
             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-6">
-              <div>
-                <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">{employee.name}</h1>
-                <p className="text-xl text-blue-600 dark:text-blue-400 font-medium mb-4">{employee.profession}</p>
+              <div className="mb-4 sm:mb-0">
+                <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-2">{employee.name}</h1>
+                <p className="text-lg sm:text-xl text-blue-600 dark:text-blue-400 font-medium mb-4">{employee.profession}</p>
                 <div className="flex items-center space-x-1 mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Star
@@ -160,10 +160,10 @@ export function EmployeeProfile({ employeeId, onClose }: EmployeeProfileProps) {
                       }`}
                     />
                   ))}
-                  <span className="ml-2 text-lg font-semibold text-gray-900 dark:text-white">
+                  <span className="ml-2 text-md sm:text-lg font-semibold text-gray-900 dark:text-white">
                     {employee.rating.toFixed(1)}
                   </span>
-                  <span className="text-gray-600 dark:text-gray-400">({reviews.length} reviews)</span>
+                  <span className="text-sm sm:text-base text-gray-600 dark:text-gray-400">({reviews.length} reviews)</span>
                 </div>
               </div>
 
@@ -242,8 +242,8 @@ export function EmployeeProfile({ employeeId, onClose }: EmployeeProfileProps) {
           </div>
         </div>
 
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-4 sm:p-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-6">
             Reviews ({reviews.length})
           </h2>
           <ReviewList reviews={reviews} />

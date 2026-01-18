@@ -10,8 +10,8 @@ export function Header({ onSearch, searchQuery }: HeaderProps) {
   return (
     <header className="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex items-center space-x-2">
+        <div className="flex flex-col sm:flex-row items-center justify-between h-auto sm:h-16 py-4 sm:py-0">
+          <div className="flex items-center space-x-2 mb-4 sm:mb-0">
             <MapPin className="w-8 h-8 text-blue-600" />
             <h1 className="text-2xl font-bold text-gray-900 dark:text-white">LocalConnect</h1>
           </div>
