@@ -24,17 +24,17 @@ export function Categories({ onSelectCategory }: CategoriesProps) {
     <section className="py-8 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Browse by Service</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:gap-4">
           {categories.map((category) => (
             <button
               key={category.name}
               onClick={() => onSelectCategory(category.name)}
-              className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col items-center justify-center space-y-3 group cursor-pointer border border-gray-100 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600"
+              className="bg-white dark:bg-gray-800 rounded-lg p-4 sm:p-6 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col items-center justify-center space-y-3 group cursor-pointer border border-gray-100 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600"
             >
               <div className={`${category.color} p-3 rounded-full group-hover:scale-110 transition-transform`}>
                 {category.icon}
               </div>
-              <span className="text-sm font-medium text-gray-700 dark:text-gray-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+              <span className="text-sm font-medium text-center text-gray-700 dark:text-gray-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                 {category.name}
               </span>
             </button>

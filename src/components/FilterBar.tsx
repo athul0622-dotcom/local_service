@@ -23,7 +23,7 @@ export function FilterBar({
         <span className="font-semibold text-gray-900 dark:text-white">{totalResults}</span> service providers found
       </div>
 
-      <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
+      <div className="flex flex-wrap items-center justify-center sm:justify-end gap-4">
         <div className="flex items-center space-x-2">
           <MapPin className="w-4 h-4 text-gray-500 dark:text-gray-400" />
           <span className="text-sm text-gray-600 dark:text-gray-300">Filter by:</span>
