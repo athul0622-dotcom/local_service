@@ -161,7 +161,7 @@ FOR EACH ROW
 EXECUTE FUNCTION update_employee_rating();
 
 INSERT INTO employees (name, profession, location, phone, email, rating, skills, availability, photo_url, description, experience_years) VALUES
-('Manoj Kumar', 'Plumber', 'Kochi', '9876543210', 'manoj.kumar@example.com', 4.5, ARRAY['Pipe fitting', 'Drain cleaning', 'Leak repair'], 'Mon-Sat, 9am-6pm', 'https://i.pravatar.cc/150?u=manojkumar', 'A reliable plumber with over 10 years of experience.', 10),
+('Manoj Kumar', 'Plumber', 'Kochi', '9876543210', 'manoj.kumar@example.com', 4.5, ARRAY['Pipe fitting', 'Drain cleaning', 'Leak repair'], 'Mon-Sat, 9am-6pm', 'https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fmale-avatar_93&ved=0CBYQjRxqFwoTCIj1y6epipMDFQAAAAAdAAAAABAI&opi=89978449', 'A reliable plumber with over 10 years of experience.', 10),
 ('Priya Nair', 'Electrician', 'Trivandrum', '9876543211', 'priya.nair@example.com', 4.8, ARRAY['Wiring', 'Fixture installation', 'Panel upgrades'], 'Mon-Fri, 10am-7pm', 'https://i.pravatar.cc/150?u=priyanair', 'Certified electrician specializing in residential and commercial projects.', 8),
 ('Anil Varma', 'Carpenter', 'Kozhikode', '9876543212', 'anil.varma@example.com', 4.2, ARRAY['Furniture making', 'Cabinetry', 'Door installation'], 'Mon-Sat, 8am-5pm', 'https://i.pravatar.cc/150?u=anilvarma', 'Skilled carpenter with a passion for creating custom furniture.', 15),
 ('Sunitha Menon', 'House Painter', 'Thrissur', '9876543213', 'sunitha.menon@example.com', 4.9, ARRAY['Interior painting', 'Exterior painting', 'Texture painting'], 'Mon-Sun, 9am-6pm', 'https://i.pravatar.cc/150?u=sunithamenon', 'Experienced house painter known for high-quality work and attention to detail.', 12),
